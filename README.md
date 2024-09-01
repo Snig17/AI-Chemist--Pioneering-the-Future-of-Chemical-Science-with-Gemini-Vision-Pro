@@ -9,9 +9,15 @@ AI Chemist is an innovative application designed to assist chemists in research 
 - Data-Driven Insights: Gain insights into chemical synthesis routes, yield, purity, and more.
 
 ## Technologies Used
-Streamlit: For building the interactive web application.
-Google Generative AI (Gemini 1.5 Flash): To analyze input data and generate content.
-Python-dotenv: To manage environment variables securely.
-Pillow: For image processing.
-PyPDF2: For handling PDF documents.
-streamlit-extras: Additional utilities to enhance the Streamlit app.
+- Streamlit: For building the interactive web application.
+- Google Generative AI (Gemini 1.5 Flash): To analyze input data and generate content.
+- Python-dotenv: To manage environment variables securely.
+- Pillow: For image processing.
+- PyPDF2: For handling PDF documents.
+- streamlit-extras: Additional utilities to enhance the Streamlit app.
+
+## Project Structure
+- app.py: The main application file containing both the model and UI code.
+- requirements.txt: List of required libraries to set up the environment.
+- images/: Directory to store images used in the user interface.
+- .env: Securely stores environment variables like the Google API key.
