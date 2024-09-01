@@ -7,3 +7,11 @@ AI Chemist is an innovative application designed to assist chemists in research 
 - Experiment Design: Receive tailored experiment designs based on the input chemical structures and research objectives.
 - Real-time Monitoring: Adjust and optimize reaction conditions on the fly with real-time feedback.
 - Data-Driven Insights: Gain insights into chemical synthesis routes, yield, purity, and more.
+
+## Technologies Used
+Streamlit: For building the interactive web application.
+Google Generative AI (Gemini 1.5 Flash): To analyze input data and generate content.
+Python-dotenv: To manage environment variables securely.
+Pillow: For image processing.
+PyPDF2: For handling PDF documents.
+streamlit-extras: Additional utilities to enhance the Streamlit app.
