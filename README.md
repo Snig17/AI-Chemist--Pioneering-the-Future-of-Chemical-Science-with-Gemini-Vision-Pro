@@ -1,23 +1,34 @@
-# AI Chemist: Pioneering the Future of Chemical Science with Gemini Vision Pro
+# AI Chemist — Tablet Identification with Gemini Vision
 
-AI Chemist is an innovative application designed to assist chemists in research by leveraging the power of artificial intelligence. This project utilizes the Gemini model (version 1.5 Flash) to analyze chemical inputs, identify tablets from images, and generate detailed experimental recommendations. The app aims to enhance research efficiency and foster innovation in the field of chemistry through intelligent, data-driven guidance.
+An AI-powered app that identifies medication tablets from a photo and explains their uses, dosage context, and key characteristics — built using Google's Gemini 1.5 Flash vision model.
+
+Built during a Generative AI Internship — Google Cloud Generative AI (SmartInternz).
 
 ## Features
-- Tablet Identification: Upload an image of tablets, and the AI Chemist app will identify the tablets and provide detailed information on each.
-- Experiment Design: Receive tailored experiment designs based on the input chemical structures and research objectives.
-- Real-time Monitoring: Adjust and optimize reaction conditions on the fly with real-time feedback.
-- Data-Driven Insights: Gain insights into chemical synthesis routes, yield, purity, and more.
+- Upload a photo of a tablet/medicine package
+- Gemini Vision analyzes the image and identifies the medication
+- Returns a structured breakdown: uses, functionality, dosage context, and distinguishing features
 
-## Technologies Used
-- Streamlit: For building the interactive web application.
-- Google Generative AI (Gemini 1.5 Flash): To analyze input data and generate content.
-- Python-dotenv: To manage environment variables securely.
-- Pillow: For image processing.
-- PyPDF2: For handling PDF documents.
-- streamlit-extras: Additional utilities to enhance the Streamlit app.
+## Tech stack
+- Streamlit — web app UI
+- Google Generative AI (Gemini 1.5 Flash) — image understanding
+- Python-dotenv — environment variable management
+- Pillow — image handling
 
-## Project Structure
-- app.py: The main application file containing both the model and UI code.
-- requirements.txt: List of required libraries to set up the environment.
-- images/: Directory to store images used in the user interface.
-- .env: Securely stores environment variables like the Google API key.
+## How to run
+```bash
+pip install -r requirements.txt
+```
+Create a `.env` file in the project root with:
+
+
+GOOGLE_API_KEY=your_api_key_here
+
+Then run:
+```bash
+streamlit run app.py
+```
+
+## Example
+Upload a photo of a tablet box → get an AI-generated summary of what it is and what it's used for.
+
