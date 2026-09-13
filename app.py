@@ -11,7 +11,7 @@ load_dotenv()
 # Configure the API key for Google Generative AI
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-# Function to load Google Gemini 1.5 Flash API and get response
+# Function to call Gemini's vision model and get a response
 def get_gemini_response(input_text, image, prompt):
     model = genai.GenerativeModel('gemini-flash-latest')
     response = model.generate_content([input_text, image[0], prompt])
